@@ -1,0 +1,13 @@
+p {
+	width: 800px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	align-self: center;
+}
