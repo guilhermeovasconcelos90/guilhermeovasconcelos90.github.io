@@ -7,112 +7,108 @@
 
 <body>
 	<h1 align="center">Programação em Linguagem C</h1>
+	<h2>Introdução</h2>
 
-	<ul>
-		<li><h2>Introdução</h2></li>
+	<p>Este tutorial tem como objetivo falar dos conceitos básicos de programação em C. 
+		Apresentaremos apenas conceitos iniciais e alguns exemplos.</p>
 
-		<p>Este tutorial tem como objetivo falar dos conceitos básicos de programação em C. 
-		   Apresentaremos apenas conceitos iniciais e alguns exemplos.</p>
+	<h2>Um programa simples</h2>
 
-		<li><h2>Um programa simples</h2></li>
+	<p>Tomemos como exemplo o seguinte programa:</p>
 
-		<p>Tomemos como exemplo o seguinte programa:</p>
+	<code>
+		#include &ltstdio.h&gt 
+		<br/><br/>
+		int main () <br/> 
+		{ <br/>
+			&nbsp&nbsp&nbspprintf ("Hello, world!");
+			<br/>
 
-		<code>
-			#include &ltstdio.h&gt 
-			<br/><br/>
-			int main () <br/> 
-			{ <br/>
-				&nbsp&nbsp&nbspprintf ("Hello, world!");
-				<br/>
+			&nbsp&nbsp&nbspreturn 0; 
+			<br/>
+		}
+	</code>
 
-				&nbsp&nbsp&nbspreturn 0; 
-				<br/>
-			}
-		</code>
+	<p>Este programa é um exemplo clássico apresentado no início quando se aprende C. Ele tem apenas uma funcionalidade: exibir na tela do console uma mensagem dizendo "Hello, world!". Para isso usamos apenas uma função, a chamada <code>printf</code>. Esta funcionalidade está incluida na biblioteca <code>stdio.h</code>, por isso precisamos começar o programa com a instrução para incluir a mesma. O código principal do programa reside dentro do bloco <code>main</code>.
+	No nosso caso, temos apenas um comando de saída, impressão de uma frase na tela.</p>
 
-		<p>Este programa é um exemplo clássico apresentado no início quando se aprende C. Ele tem apenas uma funcionalidade: exibir na tela do console uma mensagem dizendo "Hello, world!". Para isso usamos apenas uma função, a chamada <code>printf</code>. Esta funcionalidade está incluida na biblioteca <code>stdio.h</code>, por isso precisamos começar o programa com a instrução para incluir a mesma. O código principal do programa reside dentro do bloco <code>main</code>.
-		No nosso caso, temos apenas um comando de saída, impressão de uma frase na tela.</p>
+	<h2>Declaração de variáveis</h2>
 
-		<li><h2>Declaração de variáveis</h2></li>
+	<p>As variáveis são entidades de programação que funcionam como "caixas" para guardar valores, como números ou caractéres. As variáveis possuem um tipo. O tipo de valores que uma variável aceita determina o seu tipo em C. Vejamos os principais tipos:</p>
 
-		<p>As variáveis são entidades de programação que funcionam como "caixas" para guardar valores, como números ou caractéres. As variáveis possuem um tipo. O tipo de valores que uma variável aceita determina o seu tipo em C. Vejamos os principais tipos:</p>
+	<table align="center">
+		<tr>
+			<th>Tipo</th>
 
-		<table align="center">
-			<tr>
-				<th>Tipo</th>
+			<th>Descrição</th>
+		</tr>
 
-				<th>Descrição</th>
-			</tr>
+		<tr>
+			<td>
+				<code>int</code>
+			</td>
 
-			<tr>
-				<td>
-					<code>int</code>
-				</td>
+			<td>
+				Valores inteiros, sendo positivos, negativos ou zero.
+			</td>
+		</tr>
 
-				<td>
-					Valores inteiros, sendo positivos, negativos ou zero.
-				</td>
-			</tr>
+		<tr>
+			<td>
+				<code>float</code>
+			</td>
 
-			<tr>
-				<td>
-					<code>float</code>
-				</td>
+			<td>
+				Valores númericos em geral, também englobando positivos, negativos e zero, porém os valores podem ser "quebrados", decimais
+			</td>
+		</tr>
 
-				<td>
-					Valores númericos em geral, também englobando positivos, negativos e zero, porém os valores podem ser "quebrados", decimais
-				</td>
-			</tr>
+		<tr>
+			<td>
+				<code>char</code>
+			</td>
 
-			<tr>
-				<td>
-					<code>char</code>
-				</td>
+			<td>
+				Uma variável deste tipo armazena um único caracter.
+			</td>
+		</tr>
+	</table>
 
-				<td>
-					Uma variável deste tipo armazena um único caracter.
-				</td>
-			</tr>
-		</table>
-
-		<p>Para criar uma variável, precisamos declará-la como neste exemplo:</p>
+	<p>Para criar uma variável, precisamos declará-la como neste exemplo:</p>
 
 
-		<code>int a;</code>
+	<code>int a;</code>
 
 
-		<li><h2>Operações aritméticas e atribuição</h2></li>
+	<h2>Operações aritméticas e atribuição</h2>
 
-		<p>Computadores realizam cálculos. Uma linguagem de programação precisa ser capaz de definir os cálculos realizados em um programa. 
-		Por isso, C possui diversas operações com números, como soma, subtração, multiplicação e divisão. Vale ressaltar que também temos uma operação de resto.</p>
+	<p>Computadores realizam cálculos. Uma linguagem de programação precisa ser capaz de definir os cálculos realizados em um programa. 
+	Por isso, C possui diversas operações com números, como soma, subtração, multiplicação e divisão. Vale ressaltar que também temos uma operação de resto.</p>
 
-		<p>Uma vez que o resultado de uma operação é obtido, é necessário armazená-lo em uma variável apropriada, para não perder o valor resultante.Vejamos alguns exemplos:</p>
+	<p>Uma vez que o resultado de uma operação é obtido, é necessário armazená-lo em uma variável apropriada, para não perder o valor resultante.Vejamos alguns exemplos:</p>
 
-		<table align="center">
-			<tr>
-				<th>
-					Operação 
-				</th>
+	<table align="center">
+		<tr>
+			<th>
+				Operação 
+			</th>
 
-				<th>
-					Exemplo
-				</th>
-			</tr>
+			<th>
+				Exemplo
+			</th>
+		</tr>
 
-			<tr>
-				<td>
-					Soma
-				</td>
+		<tr>
+			<td>
+				Soma
+			</td>
 
-				<td>
-					<code>
-						int a = 2, b;
-						</code>
-				</td>
-			</tr>
-		</table>
-	</ul>
-
+			<td>
+				<code>
+					int a = 2, b;
+					</code>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>
