@@ -13,7 +13,6 @@ h1 {
 p {
 	width: 800px;
 	text-align: justify;
-	text-justify: inter-word;
 }
 
 table, th, td {
