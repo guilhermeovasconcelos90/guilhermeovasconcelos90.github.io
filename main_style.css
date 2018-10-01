@@ -1,5 +1,5 @@
 #painel {
-    margin: 100px;
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,8 +9,5 @@
     border: 5px solid gray;
 }
 
-#painel a {
-    margin: 10px;
-}
 
 
