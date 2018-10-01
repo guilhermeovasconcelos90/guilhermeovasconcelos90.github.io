@@ -1,3 +1,15 @@
+body {
+	margin-left: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	text-decoration: underline;
+}
+
 p {
 	width: 800px;
 	text-align: justify;
@@ -9,5 +21,15 @@ table, th, td {
 }
 
 table {
-	align-self: center;
+	margin: auto;
+	width: 50%;
 }
+
+#operacoes tr > td {
+	text-align: center;
+}
+
+pre, code {
+	color: blueviolet;
+}
+

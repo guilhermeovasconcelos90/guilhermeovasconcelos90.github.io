@@ -6,10 +6,11 @@
 </head>
 
 <body>
-	<h1 align="center">Programação em Linguagem C</h1>
+	<h1>Programação em Linguagem C</h1>
 	<h2>Introdução</h2>
 
-	<p>Este tutorial tem como objetivo falar dos conceitos básicos de programação em C. 
+	<p>
+		Este tutorial tem como objetivo falar dos conceitos básicos de programação em C. 
 		Apresentaremos apenas conceitos iniciais e alguns exemplos.</p>
 
 	<h2>Um programa simples</h2>
@@ -27,14 +28,15 @@ int main ()
 }
 </pre>
 
-	<p>Este programa é um exemplo clássico apresentado no início quando se aprende C. Ele tem apenas uma funcionalidade: exibir na tela do console uma mensagem dizendo "Hello, world!". Para isso usamos apenas uma função, a chamada <code>printf</code>. Esta funcionalidade está incluida na biblioteca <code>stdio.h</code>, por isso precisamos começar o programa com a instrução para incluir a mesma. O código principal do programa reside dentro do bloco <code>main</code>.
-	No nosso caso, temos apenas um comando de saída, impressão de uma frase na tela.</p>
+	<p>
+		Este programa é um exemplo clássico apresentado no início quando se aprende C. Ele tem apenas uma funcionalidade: exibir na tela do console uma mensagem dizendo "Hello, world!". Para isso usamos apenas uma função, a chamada <code>printf</code>. Esta funcionalidade está incluida na biblioteca <code>stdio.h</code>, por isso precisamos começar o programa com a instrução para incluir a mesma. O código principal do programa reside dentro do bloco <code>main</code>.
+		No nosso caso, temos apenas um comando de saída, impressão de uma frase na tela.</p>
 
 	<h2>Declaração de variáveis</h2>
 
 	<p>As variáveis são entidades de programação que funcionam como "caixas" para guardar valores, como números ou caractéres. As variáveis possuem um tipo. O tipo de valores que uma variável aceita determina o seu tipo em C. Vejamos os principais tipos:</p>
 
-	<table align="center">
+	<table>
 		<tr>
 			<th>Tipo</th>
 
@@ -57,7 +59,7 @@ int main ()
 			</td>
 
 			<td>
-				Valores númericos em geral, também englobando positivos, negativos e zero, porém os valores podem ser "quebrados", decimais
+				Valores númericos em geral, também englobando positivos, negativos e zero, porém os valores podem ser "quebrados", decimais.
 			</td>
 		</tr>
 
@@ -72,20 +74,27 @@ int main ()
 		</tr>
 	</table>
 
-	<p>Para criar uma variável, precisamos declará-la como neste exemplo:</p>
+	<p>Para criar uma variável, podemos declará-la como neste exemplo:</p>
 
 
 	<code>int a;</code>
 
+	<p>Podemos declarar mais de uma variável do mesmo tipo. Algumas variáveis podes ser inicializadas.</p>
+
+<pre>
+int a, b, c
+float x, y = 2.5, z;
+</pre>
 
 	<h2>Operações aritméticas e atribuição</h2>
 
-	<p>Computadores realizam cálculos. Uma linguagem de programação precisa ser capaz de definir os cálculos realizados em um programa. 
-	Por isso, C possui diversas operações com números, como soma, subtração, multiplicação e divisão. Vale ressaltar que também temos uma operação de resto.</p>
+	<p>
+		Computadores realizam cálculos. Uma linguagem de programação precisa ser capaz de definir os cálculos realizados em um programa. 
+		Por isso, C possui diversas operações com números, como adição, subtração, multiplicação e divisão. Vale ressaltar que também temos uma operação de resto.</p>
 
 	<p>Uma vez que o resultado de uma operação é obtido, é necessário armazená-lo em uma variável apropriada, para não perder o valor resultante.Vejamos alguns exemplos:</p>
 
-	<table align="center">
+	<table id="operacoes">
 		<tr>
 			<th>
 				Operação 
@@ -98,15 +107,184 @@ int main ()
 
 		<tr>
 			<td>
-				Soma
+				Adição
 			</td>
 
 			<td>
 				<code>
-					int a = 2, b;
-					</code>
+					int a = 3 + 2;
+				</code>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Subtração
+			</td>
+
+			<td>
+				<code>
+					float x = y - 3.0;
+				</code>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Multiplicação
+			</td>
+
+			<td>
+				<code>
+					float x = 50 * 22;
+				</code>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Divisão
+			</td>
+
+			<td>
+				<code>
+					float resultado = 153.9 / 2;
+				</code> 
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Divisão inteira
+			</td>
+
+			<td>
+				<code>
+					int a = 5 / 3; (a recebe 1)
+				</code>
 			</td>
 		</tr>
 	</table>
+
+	<h2>Instruções de entrada e saída</h2>
+
+	<p>
+		Como vimos anteriormente, o programa pode exibir uma mensagem na tela usando-se a função <code>printf</code>.
+		Esta é uma instrução de saída. Um programa precisa ter instruções de entrada e saída. Instruções de saída, realizadas 
+		por meio da função <code>scanf</code>, informam o usuário sobre os resultados da execução, enquanto as instruções
+		de entrada fornecem os dados necessários para a execução.
+	</p>
+
+	<p>
+		Vejamos um programa que contém vários exemplos do que falamos:
+	</p>
+
+<pre>
+#include &lt;scanf&gt;
+
+int main () 
+{
+&nbsp;&nbsp;&nbsp;int a, b, res;
+
+&nbsp;&nbsp;&nbsp;printf("Digite um numero\n");
+&nbsp;&nbsp;&nbsp;scanf("%d", &a);
+
+&nbsp;&nbsp;&nbsp;printf("Digite o numero a adicionar\n");
+&nbsp;&nbsp;&nbsp;scanf("%d", &b);
+
+&nbsp;&nbsp;&nbsp;res = a + b;
+&nbsp;&nbsp;&nbsp;printf("O resultado da adicao eh: %d", res);
+
+&nbsp;&nbsp;&nbsp;return 0;
+}
+</pre>
+
+	<p>
+		Neste programa pedimos ao usuário informar dois números inteiros, adicionamos os números, guardando o resultado
+		na variável <code>res</code> e exibimos seu valor na tela. Repare em como fazemos isso: deixamos uma "lacuna" na frase 
+		com <code>%d</code>, que corresponde a um valor inteiro, que deve ser especificado depois da frase a exibir.
+	</p>
+
+	<h2>Estruturas de decisão</h2>
+	
+	<h3>O comando <code>if</code></h3>
+
+	<p>
+		Estruturas de decisão são entidades de programação que permitem o programa "decidir" o que executar, caso
+		uma condição seja satisfeita. Para isso, em C, temos o comando <code>if</code>, que só executa o código contido nele
+		se a condição for verdadeira. Por exemplo:
+	</p>
+
+<pre>
+if (x > 0) 
+{
+&nbsp;&nbsp;&nbsp;printf("x eh positivo");
+}
+</pre>
+
+	<p>
+		Caso o valor de x seja, por exemplo, 2, a mensagem será exibida. Caso contrário,
+		o código dentro da estrutura de <code>if</code> será ignorado pelo programa, passando a execução para instruções logo abaixo
+		do bloco <code>if</code>.
+	</p>
+
+	<h3><code>if ... else</code></h3>
+
+	<p>
+		Há casos em que é necessário que o programa tome uma ação caso a condição seja falsa. Para esse propósito,
+		temos a palavra-chave <code>else</code>, que significa "senão". Seu bloco de instruções é executado caso a condição seja falsa,
+		antes de passar para as instruções seguintes.
+	</p>
+
+<pre>
+if(saldo > 0)
+{
+&nbsp;&nbsp;&nbsp;printf("Há uma quantia a ser debitada");
+} 
+else
+{
+&nbsp;&nbsp;&nbsp;printf("Impossivel debitar um valor da conta");
+}
+
+printf("Fim da operacao");
+</pre>
+
+	<p>
+		No exemplo anterior, temos uma pequena simulação de verificação de saldo de uma conta.
+		O programa deve informar se há saldo na conta, antes de debitar um valor. Para cada caso, a execução é diferente.
+		Por isso usamos uma estrutura de decisão. Como temos que tomar uma ação específica caso o saldo seja negativo, usamos
+		<code>else</code>.
+	</p>
+
+	<h2>Operações relacionais e lógicas</h2>
+
+	<p>
+		Operações relacionais são aquelas que comparam dois valores numéricos, como "x é maior que y" (<code>x &gt; y</code>).
+		Elas são podem representar afirmações que são ou verdadeiras, ou falsas. Podemos associar diferentes fatos, 
+		afirmações sobre a comparação de dois valores e criar condições múltiplas usando operadores lógicos:
+
+		<ul>
+			<li><code>&& (e)</code></li>
+
+			<li><code>&vert;&vert; (ou)</code></li>
+
+			<li><code>! (não)</code></li>
+		</ul>
+
+		Por exemplo, podemos especificar uma condição para que um aluno vá para a prova final.
+
+<pre>
+if ((nota &lt; 7.0) && (nota &gt;&equals; 3.0)) {
+&nbsp;&nbsp;&nbsp;printf ("Prova final");
+}
+</pre>
+	</p>
+
+	<h2>Conclusão</h2>
+
+	<p>
+		A linguagem C é rica e seus recursos são muito poderosos. Este tutorial aborda apenas algumas noções básicas.
+		Aprendemos o suficiente para experimentarmos com a criação de diversos programas. Divirta-se!
+	</p>
 </body>
 </html>
