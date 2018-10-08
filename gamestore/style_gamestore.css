@@ -1,6 +1,7 @@
 body { 
   background: url('./assets/batman_arkham_main_background.jpg') no-repeat center center fixed; 
   background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #header-div {
@@ -20,7 +21,6 @@ body {
   text-align: center;
   color: white;
   font-size: 4em;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 #title-box {
@@ -29,6 +29,13 @@ body {
   padding-right: 8px;
 }
 
-.enhanced-black {
-  background-color: rgba(black, 0.7);
+.item-jogo {
+  margin: 10px 0px 10px 0px;
+  background: rgba(61, 54, 52, 0.815);
 }
+
+.descricao-item {
+  width: 68%;
+  color: white;  
+}
+
