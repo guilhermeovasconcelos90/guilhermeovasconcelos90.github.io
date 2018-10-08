@@ -79,8 +79,8 @@ body {
   background: rgba(136, 122, 102, 0.651);
 }
 
-.imagem-item {
-  padding: 1em 0em;
+.item-image {
+  padding: 1.4em 1em 1em 1em;
 }
 
 .texto-descricao {
