@@ -76,6 +76,7 @@ body {
 .imagem-item-celula {
   height: 10em;
   padding: 2em;
+  background: rgba(136, 122, 102, 0.651);
 }
 
 .imagem-item {
