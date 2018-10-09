@@ -39,6 +39,10 @@ body {
   text-align: center;
 }
 
+.nome-item-div:hover {
+  background: rgba(136, 122, 102, 0.651);
+}
+
 .nome-item-div a:link {
   color: silver;
   text-decoration: none;
