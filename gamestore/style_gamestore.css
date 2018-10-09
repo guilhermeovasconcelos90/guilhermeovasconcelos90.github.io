@@ -89,6 +89,8 @@ body {
 
 .texto-descricao {
   height: 5.9em;
+  text-align: justify;
+  text-justify: inter-word;
   overflow-y: hidden;
 }
 
