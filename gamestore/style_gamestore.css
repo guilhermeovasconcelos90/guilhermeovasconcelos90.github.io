@@ -39,26 +39,26 @@ body {
   text-align: center;
 }
 
-.nome-item-div:hover {
+.bg-link:hover {
   background: rgba(136, 122, 102, 0.651);
 }
 
-.nome-item-div a:link {
+a.link:link {
   color: silver;
   text-decoration: none;
 }
 
-.nome-item-div a:visited {
+a.link:visited {
   color: silver;
   text-decoration: none;
 }
 
-.nome-item-div a:hover {
+a.link:hover {
   color: gold;
   text-decoration: none;
 }
 
-.nome-item-div a:active {
+a.link:active {
   color: silver;
   text-decoration: none;
 }

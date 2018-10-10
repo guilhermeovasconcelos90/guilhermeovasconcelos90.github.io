@@ -1,0 +1,175 @@
+body { 
+    background: url('../assets/batman_arkham_main_background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-div {
+    margin: auto;
+    background-color: rgba(61, 54, 52, 0.815);
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 5px;
+    border-top-style: solid;
+    border-top-color: yellow;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(192, 191, 154);
+}
+
+.header-div h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+.title-box {
+    border: 2px solid white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+section {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-right: 1em;
+}
+
+.nome-jogo {
+    margin: 1em 0;
+    border-radius: 1em;
+    background: rgba(136, 122, 102, 0.651);
+}
+
+.nome-jogo h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 1em;
+}
+
+.imagem-celula {
+    height: 10em;
+    padding: 2em;
+    background: rgba(136, 122, 102, 0.651);
+    border-radius: 1em;
+}
+
+.game-image {
+    padding: 1.4em 2em 1em 2em;
+    border-radius: 30em;
+}
+
+.bloco-inicial {
+    margin: 30px 0px 30px 0px;
+    background: rgba(61, 54, 52, 0.815);
+    border-radius: 1em;
+}
+
+.descricao-e-opcoes {
+    width: 68%;
+    color: white; 
+    padding: 0px;
+}
+
+.descricao {
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.preco {
+    display: inline-block;
+    color: rgb(195, 195, 224);
+    margin-top: 2em;
+    padding: 0em 2em 0em 2em;
+    font-size: 2em;
+}
+
+.opcoes {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.opcoes div {
+    margin: 1em;
+    padding: 0.5em 1em;
+    border: 2px solid rgb(121, 129, 156);
+    text-align: center;
+}
+
+.opcao-comprar {
+    background: rgba(109, 122, 151, 0.945); 
+}
+
+.bg-link:hover {
+    background: rgba(136, 122, 102, 0.651);
+}
+
+.bg-link-special:hover {
+    background: rgb(110, 110, 122);
+    border: 2px solid gold;
+}
+
+.bg-link-buy:hover {
+    background: rgba(175, 161, 78, 0.87);
+    border: 2px solid gold;
+}
+
+.highlight:hover {
+    color: white;
+}
+
+a.link:link {
+    color: silver;
+    text-decoration: none;
+}
+
+a.link:visited {
+    color: silver;
+    text-decoration: none;
+}
+  
+a.link:hover {
+    color: gold;
+    text-decoration: none;
+}
+  
+a.link:active {
+    color: silver;
+    text-decoration: none;
+}
+
+.sobrejogo-div {
+    background: rgba(61, 54, 52, 0.815);
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.sobrejogo-cabecalho {
+    padding: 1em;
+    border-radius: 1em;
+    background: rgba(136, 122, 102, 0.651)
+}
+
+.sobrejogo-conteudo {
+    padding: 2em;
+}
+
+.border-button {
+    border: 2px solid rgba(109, 122, 151, 0.945);
+}
+
+.voltar {
+    margin: auto;
+    width: 12em;
+    text-align: center;
+    padding: 1em;
+}
