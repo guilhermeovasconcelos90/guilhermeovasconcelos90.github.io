@@ -160,7 +160,7 @@ a.link:active {
 }
 
 .sobrejogo-conteudo {
-    padding: 2em;
+    padding: 1em;
 }
 
 .border-button {
@@ -172,4 +172,8 @@ a.link:active {
     width: 12em;
     text-align: center;
     padding: 1em;
+}
+
+.sobrejogo-conteudo li {
+    margin: 1em 0em;
 }
