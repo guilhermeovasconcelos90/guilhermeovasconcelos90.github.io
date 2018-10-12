@@ -30,9 +30,8 @@ body {
 }
 
 section {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-right: 1em;
+    margin: 1em auto;
+    width: 96%;
 }
 
 .nome-jogo {
@@ -60,7 +59,7 @@ section {
 
 .game-image {
     padding: 1.4em 2em 1em 2em;
-    border-radius: 30em;
+    border-radius: 8em;
 }
 
 .bloco-inicial {
@@ -98,12 +97,12 @@ section {
 .opcoes div {
     margin: 1em;
     padding: 0.5em 1em;
-    border: 2px solid rgb(121, 129, 156);
+    border: 2px solid rgb(181, 188, 212);
     text-align: center;
 }
 
 .opcao-comprar {
-    background: rgba(109, 122, 151, 0.945); 
+    background: rgba(132, 146, 175, 0.76); 
 }
 
 .bg-link:hover {
@@ -111,7 +110,7 @@ section {
 }
 
 .bg-link-special:hover {
-    background: rgb(110, 110, 122);
+    background: rgba(110, 110, 122, 0.897);
     border: 2px solid gold;
 }
 
@@ -147,8 +146,6 @@ a.link:active {
 .sobrejogo-div {
     background: rgba(61, 54, 52, 0.815);
     color: white;
-    text-align: justify;
-    text-justify: inter-word;
     border-radius: 1em;
     padding: 1em;
 }
@@ -156,11 +153,14 @@ a.link:active {
 .sobrejogo-cabecalho {
     padding: 1em;
     border-radius: 1em;
+    text-align: center;
     background: rgba(136, 122, 102, 0.651)
 }
 
 .sobrejogo-conteudo {
     padding: 1em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .border-button {
@@ -168,12 +168,82 @@ a.link:active {
 }
 
 .voltar {
-    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right:auto;
     width: 12em;
     text-align: center;
     padding: 1em;
 }
 
+.sobrejogo-conteudo p {
+    width: 85%;
+}
+
+.sobrejogo-conteudo ul {
+    width: 70%;
+}
+
 .sobrejogo-conteudo li {
     margin: 1em 0em;
 }
+
+.screenshots-div {
+    background: rgba(61, 54, 52, 0.815);
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.screenshots-cabecalho {
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    background: rgba(136, 122, 102, 0.651);
+}
+
+.screenshots-conteudo {
+    margin: auto;
+    padding: 1em;
+}
+
+.screenshots-conteudo table {
+    margin: auto;
+}
+
+.comprar-div {
+    background: rgba(61, 54, 52, 0.815);
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.comprar-cabecalho {
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    background: rgba(136, 122, 102, 0.651)
+}
+
+.comprar-conteudo {
+    padding: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.border-button {
+    border: 2px solid rgba(109, 122, 151, 0.945);
+}
+
+.voltar {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right:auto;
+    width: 12em;
+    text-align: center;
+    padding: 1em;
+}
+
+
