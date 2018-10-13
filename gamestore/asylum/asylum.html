@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Batman: Arkham Asylum Game of the Year Edition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/game_page_style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../_css/game_page_style.css" />
 </head>
 <body>
     <header>
@@ -117,7 +117,84 @@
             </div>
 
             <div class="comprar-conteudo">
+                <form action="./asylum_purchased.html">
+                    <div class="form-linha">
+                        <div class="label-div">
+                            <label>Full name *</label>
+                        </div>
 
+                        <div class="texto-div">
+                            <input type="text" class="texto-nome">
+                        </div>
+                    </div>
+
+                    <div class="form-linha">
+                            <div class="label-div">
+                                <label>Address *</label>
+                            </div>
+    
+                            <div class="texto-div">
+                                <input type="text" class="texto-lugradouro">
+                                <input type="text" class="texto-apt">
+                            </div>
+                    </div>
+
+                    <div class="form-linha">
+                        <div class="label-div">
+                            <label>Credit card *</label>
+                        </div>
+                    
+
+                    <div class="radio-div">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="credit-card-logo-div">
+                                        <img src="./assets_asylum/visa-logo.png" class="credit-card-logo">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="credit-card-logo-div">
+                                        <img src="./assets_asylum/mastercard-logo.jpg" class="credit-card-logo">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="radio-credit-card-div">
+                                        <input type="radio" name="radio-credit-card" class="option-credit-card">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="radio-credit-card-div">
+                                        <input type="radio" name="radio-credit-card" class="option-credit-card">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="form-linha">
+                        <div class="label-div">
+                            <label>Credit card number *</label>
+                        </div>
+                    
+
+                        <div class="texto-div">
+                                <input type="text" class="texto-numero-cartao">
+                                <label for="digitos-seguranca-id">CVV *</label>
+                                <input type="text" class="texto-digitos-seguranca" id="digitos-seguranca-id">
+                        </div>
+
+                    </div>
+
+                    <div class="form-linha">
+                        <input type="submit" class="botao-comprar highlight-buy-button" value="Buy">
+                    </div>
+                </form>
             </div>
 
             <div class="voltar border-button bg-link-special">

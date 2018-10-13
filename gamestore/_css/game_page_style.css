@@ -236,14 +236,116 @@ a.link:active {
     border: 2px solid rgba(109, 122, 151, 0.945);
 }
 
-.voltar {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right:auto;
-    width: 12em;
-    text-align: center;
-    padding: 1em;
+.comprar-conteudo form {
+    margin: auto;
+    width: 80%;
+    font-size: 1.6em;
+}
+
+.form-linha {
+    margin: 1em auto;
+    width: 98%;
+}
+
+.label-div {
+    width: 50%;
+}
+
+.texto-div {
+    margin: auto;
+    width: 100%;
+}
+
+.texto-nome {
+    width: 100%;
+    color: white;
+    font-size: 0.9em;
+    background: rgba(136, 122, 102, 0.651);
+    border: 2px solid gold;
+}
+
+.texto-lugradouro {
+    width: 85%;
+    color: white;
+    font-size: 0.9em;
+    background: rgba(136, 122, 102, 0.651);
+    border: 2px solid gold;
+}
+
+.texto-apt {
+    width: 10%;
+    margin: 0%;
+    color: white;
+    font-size: 0.9em;
+    background: rgba(136, 122, 102, 0.651);
+    border: 2px solid gold;
+}
+
+.radio-div {
+    margin: auto;
+}
+
+.radio-div table {
+    margin: auto;
+}
+
+.credit-card-logo-div {
+    margin: auto;
+    padding: 0em 1em;
+}
+
+.credit-card-logo {
+    height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+}
+
+.radio-credit-card-div {
+    margin: 0% 27% 0% 43%;
+    width: 30%;
+}
+
+.option-credit-card {
+    margin: auto;
+    width: 50%;
+}
+
+.texto-numero-cartao {
+    width: 40%;
+    color: white;
+    font-size: 0.9em;
+    background: rgba(136, 122, 102, 0.651);
+    border: 2px solid gold;
+}
+
+.texto-digitos-seguranca {
+    width: 10%;
+    margin: 0%;
+    color: white;
+    font-size: 0.9em;
+    background: rgba(136, 122, 102, 0.651);
+    border: 2px solid gold;
+}
+
+.texto-div label {
+    margin: 0em 1em;
+}
+
+.botao-comprar {
+    margin: 1.6em auto;
+    width: 10%;
+    padding: 0.3em 1em;
+    font-size: 0.9em; 
+    color: white;
+    background: rgba(132, 146, 175, 0.76);
+    border: 2px solid rgb(181, 188, 212);
+}
+
+.highlight-buy-button:hover {
+    color: gold;
+    background: rgba(175, 161, 78, 0.87);
+    border: 2px solid gold;
 }
 
 
