@@ -158,7 +158,7 @@ a.link:active {
 }
 
 .sobrejogo-conteudo {
-    padding: 1em;
+    padding: 3em;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -261,7 +261,7 @@ a.link:active {
     border: 2px solid rgba(132, 146, 175, 0.76); 
 }
 
-.item-requisito {
+.lista-requisitos-conteudo ul li strong {
     color: rgb(195, 195, 224);
 }
 
