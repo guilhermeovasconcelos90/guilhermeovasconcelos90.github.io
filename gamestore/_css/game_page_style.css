@@ -58,6 +58,8 @@ section {
 }
 
 .game-image {
+    width: 460px;
+    height: 215px;
     padding: 1.4em 2em 1em 2em;
     border-radius: 8em;
 }

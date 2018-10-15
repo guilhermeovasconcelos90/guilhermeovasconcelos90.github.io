@@ -3,12 +3,221 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test Page</title>
+    <title>Batman: Arkham Bundle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../_css/game_page_style.css" />
 </head>
 <body>
-    Bundle
+    <header>
+        <div class="header-div">
+            <h1><span class="title-box"><a href="../index.html" class="link">G A M E - S T O R E</a></span></h1>
+        </div>
+    </header>
+
+    <section>
+        <div id="bloco-inicial-id" class="bloco-inicial">
+            <div class="nome-jogo">
+                <h2>Batman: Arkham Origins</h2>
+            </div>
+                
+            <table>
+                <tr>
+                   <td class="imagem-celula">
+                        <img src="../assets/batman_arkham_bundle_item_image.jpg" class="game-image">
+                    </td>
+
+                   <td class="descricao-e-opcoes">
+                        <div class="descricao">
+                            This bundle comes with the most important games from Batman Arkham series. Get everything from our store for a special price.
+                        </div>
+                        
+                        <div class="preco highlight">Price: R$100,00</div>
+
+                        <div class="opcoes">
+                            <div class="opcao-screenshots bg-link-special">
+                                <a href="#sessao-screenshots" class="link">SCREENSHOTS</a>
+                            </div>
+
+                            <div class="opcao-comprar bg-link-buy">
+                                <a href="#sessao-comprar" class="link">BUY</a>
+                            </div>
+                        </div>
+                   </td> 
+                </tr>     
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div class="sobrejogo-div">
+            <div class="sobrejogo-cabecalho">
+                ABOUT THIS GAME
+            </div>
+
+            <div class="sobrejogo-conteudo">
+                This bundle include the following games:
+                <br>
+                <ul>
+                    <li>Batman: Arkham Asylum Game of the Year Edition</li>
+                    <li>Batman: Arkham City - Game of the Year Edition</li>
+                    <li>Batman: Arkham Knight</li>
+                    <li>Batman: Arkham Origins</li>
+                
+                Enjoy the fun!
+                </ul>
+            </div>
+
+            <div class="voltar border-button bg-link-special">
+                <a href="#" class="link">Back to top</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sessao-screenshots">
+        <div class="screenshots-div">
+            <div class="screenshots-cabecalho">
+                SCREENSHOTS
+            </div>
+
+            <div class="screenshots-conteudo">
+                <table>
+                    <tr>
+                        <td><img src="./assets_origins/origins_screenshot1.jpg"></td>
+                        <td><img src="./assets_origins/origins_screenshot2.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./assets_origins/origins_screenshot3.jpg"></td>
+                        <td><img src="./assets_origins/origins_screenshot4.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./assets_origins/origins_screenshot5.jpg"></td>
+                        <td><img src="./assets_origins/origins_screenshot6.jpg"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="voltar border-button bg-link-special">
+                    <a href="#" class="link">Back to top</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="requisitos-div">
+            <div class="requisitos-cabecalho">
+                SYSTEM REQUIREMENTS
+            </div>
+
+            <div class="requisitos-conteudo">
+                <div class="requisitos-bloco">
+                    <br>
+                    <div class="lista-requisitos">
+                        <div class="lista-requisitos-conteudo">
+                            Check the system requirements for each game on our store.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="voltar border-button bg-link-special">
+                <a href="#" class="link">Back to top</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sessao-comprar">
+        <div class="comprar-div">
+            <div class="comprar-cabecalho">
+                PAYMENT
+            </div>
+
+            <div class="comprar-conteudo">
+                <form action="./bundle_purchased.html">
+                    <div class="form-linha">
+                        <div class="label-div">
+                            <label>Full name *</label>
+                        </div>
+
+                        <div class="texto-div">
+                            <input type="text" class="texto-nome">
+                        </div>
+                    </div>
+
+                    <div class="form-linha">
+                            <div class="label-div">
+                                <label>Address *</label>
+                            </div>
+    
+                            <div class="texto-div">
+                                <input type="text" class="texto-lugradouro">
+                                <input type="text" class="texto-apt">
+                            </div>
+                    </div>
+
+                    <div class="form-linha">
+                        <div class="label-div">
+                            <label>Credit card *</label>
+                        </div>
+                    
+
+                    <div class="radio-div">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="credit-card-logo-div">
+                                        <img src="../assets/visa-logo.png" class="credit-card-logo">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="credit-card-logo-div">
+                                        <img src="../assets/mastercard-logo.jpg" class="credit-card-logo">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="radio-credit-card-div">
+                                        <input type="radio" name="radio-credit-card" class="option-credit-card">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="radio-credit-card-div">
+                                        <input type="radio" name="radio-credit-card" class="option-credit-card">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="form-linha">
+                        <div class="label-div">
+                            <label>Credit card number *</label>
+                        </div>
+                    
+
+                        <div class="texto-div">
+                                <input type="text" class="texto-numero-cartao">
+                                <label for="digitos-seguranca-id">CVV *</label>
+                                <input type="text" class="texto-digitos-seguranca" id="digitos-seguranca-id">
+                        </div>
+
+                    </div>
+
+                    <div class="form-linha">
+                        <input type="submit" class="botao-comprar highlight-buy-button" value="Buy">
+                    </div>
+                </form>
+            </div>
+
+            <div class="voltar border-button bg-link-special">
+                    <a href="#" class="link">Back to top</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
