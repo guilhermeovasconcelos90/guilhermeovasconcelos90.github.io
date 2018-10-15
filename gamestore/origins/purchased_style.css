@@ -1,0 +1,104 @@
+body { 
+    background: url('../assets/batman_arkham_main_background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-div {
+    margin: auto;
+    background-color: rgba(61, 54, 52, 0.815);
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 5px;
+    border-top-style: solid;
+    border-top-color: yellow;
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(192, 191, 154);
+}
+
+.header-div h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+.title-box {
+    border: 2px solid white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+a.link:link {
+    color: silver;
+    text-decoration: none;
+}
+
+a.link:visited {
+    color: silver;
+    text-decoration: none;
+}
+  
+a.link:hover {
+    color: gold;
+    text-decoration: none;
+}
+  
+a.link:active {
+    color: silver;
+    text-decoration: none;
+}
+
+section {
+    margin: 1em auto;
+    width: 96%;
+}
+
+.plano-de-fundo {
+    margin: 30px 0px 30px 0px;
+    background: rgba(61, 54, 52, 0.815);
+    border-radius: 1em;
+}
+
+.mensagem-titulo {
+    margin: 1em 0;
+    border-radius: 1em;
+    background: rgba(136, 122, 102, 0.651);
+}
+
+.mensagem-titulo h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 1em;
+}
+
+.imagem-div {
+    margin: auto;
+    width: 50%;
+    padding: 1em;
+    background: rgba(136, 122, 102, 0.651);
+    border-radius: 1em;
+}
+
+.game-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    padding: 1.4em 2em 1.4em 2em;
+    border-radius: 8em;
+}
+
+.game-big-title {
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 1.2em;
+    background: rgba(136, 122, 102, 0.651);
+}
