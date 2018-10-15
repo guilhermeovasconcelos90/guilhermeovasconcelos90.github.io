@@ -189,6 +189,26 @@ a.link:active {
     margin: 1em 0em;
 }
 
+.sobrejogo-conteudo a:link {
+    color: rgba(169, 188, 226, 0.897);
+    text-decoration: none;
+}
+
+.sobrejogo-conteudo a:active {
+    color: rgba(169, 188, 226, 0.897);
+    text-decoration: none;
+}
+
+.sobrejogo-conteudo a:visited {
+    color: rgba(169, 188, 226, 0.897);
+    text-decoration: none;
+}
+
+.sobrejogo-conteudo a:hover {
+    color: rgba(110, 110, 122, 0.897);
+    text-decoration: none;
+}
+
 .screenshots-div {
     background: rgba(61, 54, 52, 0.815);
     color: white;
