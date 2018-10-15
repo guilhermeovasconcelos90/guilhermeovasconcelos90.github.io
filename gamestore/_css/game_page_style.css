@@ -154,7 +154,7 @@ a.link:active {
     padding: 1em;
     border-radius: 1em;
     text-align: center;
-    background: rgba(136, 122, 102, 0.651)
+    background: rgba(136, 122, 102, 0.651);
 }
 
 .sobrejogo-conteudo {
@@ -210,6 +210,59 @@ a.link:active {
 
 .screenshots-conteudo table {
     margin: auto;
+}
+
+.requisitos-div {
+    background: rgba(61, 54, 52, 0.815);
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.requisitos-cabecalho {
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    background: rgba(136, 122, 102, 0.651);
+}
+
+.requisitos-conteudo {
+    padding: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.requisitos-bloco {
+    padding: 0.5em;
+}
+
+.requisitos-sub-cabecalho {
+    margin-right: auto;
+    width: 50%;
+    background: rgba(132, 146, 175, 0.76);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.lista-requisitos, .sub-lista-requisitos {
+    padding: 1em;
+    border-bottom: 2px solid silver;
+}
+
+
+.titulo-sub-lista-requisitos {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 10em;
+    padding: 1em;
+    text-align: center;
+    border: 2px solid rgba(132, 146, 175, 0.76); 
+}
+
+.item-requisito {
+    color: rgb(195, 195, 224);
 }
 
 .comprar-div {
